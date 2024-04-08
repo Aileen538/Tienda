@@ -1,0 +1,52 @@
+GET http://127.0.0.1:3000/api/products
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2MTNhODFkOWRlY2I1ZTc1NGQ0ZGYzYSIsInJvbGUiOiJyZWd1bGFyIiwiaWF0IjoxNzEyNTc1MjM3fQ.KVH_NmYDbH531PGvKfjlKETmCxnWjbxpj95PXJFvYfQ
+
+###
+GET http://127.0.0.1:3000/api/products/active
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2MTNhODFkOWRlY2I1ZTc1NGQ0ZGYzYSIsInJvbGUiOiJyZWd1bGFyIiwiaWF0IjoxNzEyNTc1MjM3fQ.KVH_NmYDbH531PGvKfjlKETmCxnWjbxpj95PXJFvYfQ
+
+###
+POST http://127.0.0.1:3000/api/products
+Content-Type: application/json
+
+{ 
+    "name": "12",
+    "description": "lala"
+}
+
+###
+GET http://localhost:3000/api/products/price/50/max/60
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2MTNhODFkOWRlY2I1ZTc1NGQ0ZGYzYSIsInJvbGUiOiJyZWd1bGFyIiwiaWF0IjoxNzEyNTc1MjM3fQ.KVH_NmYDbH531PGvKfjlKETmCxnWjbxpj95PXJFvYfQ
+
+###
+POST http://localhost:3000/api/users/register
+Content-Type: application/json
+
+{
+    "name": "121212",
+    "email": "a@a",
+    "passwordd": "12345"
+}
+
+###
+POST http://localhost:3000/api/users/login
+Content-Type: application/json
+
+{
+    "email": "anita@gmail.com",
+    "password": "1234"
+}
+
+###
+PUT http://localhost:3000/api/products/add_cart
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2MTNhODFkOWRlY2I1ZTc1NGQ0ZGYzYSIsInJvbGUiOiJyZWd1bGFyIiwiaWF0IjoxNzEyNTc2NTQxfQ.3sIIpy8vxcU2rvhTcCvWTe_e9jsz4lpHmKVSRvXfWtI
+
+{
+    "product_id": "6565d2d08c270fdedef39568"
+}
+
+
+###
+GET http://localhost:3000/api/users/profile
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2MTNhODFkOWRlY2I1ZTc1NGQ0ZGYzYSIsInJvbGUiOiJyZWd1bGFyIiwiaWF0IjoxNzEyNTc2NTQxfQ.3sIIpy8vxcU2rvhTcCvWTe_e9jsz4lpHmKVSRvXfWtI

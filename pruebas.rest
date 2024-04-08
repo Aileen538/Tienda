@@ -1,0 +1,18 @@
+GET http://localhost:3000/api/products
+###
+POST http://127.0.0.1:3000/api/products
+Content-Type: application/json
+
+{ "name": 
+"termomix", "description": "Esto es una termomix", "price": 800, "department": "test", "available": true, "stock": 30 }
+
+###
+
+GET http://127.0.0.1:3000/api/products/DEPARTAMENTO
+
+
+
+
+
+
+
