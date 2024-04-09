@@ -43,7 +43,9 @@ router.get('/:department', async (req, res) => {
 
 router.post('/', validate(productSchema), async (req, res) => {
     // req.body: name, description, price, department, available, stock
+    req.body.creator= req.user._Id;
     const newProduct = await Product.create(req.body);
+    const Product= await Product.findById(newProduct._Id).populate('creator','name email -_id');
     res.json(newProduct);
 });
 
